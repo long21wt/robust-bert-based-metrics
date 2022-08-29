@@ -94,7 +94,7 @@ def main():
     parser.add_argument("-n", "--num_layers", default=1)
     parser.add_argument(
         "--lang_pairs",
-        default="en-cs",
+        default="fi-en",
         help="language pairs used for tuning",
     )
     args = parser.parse_args()

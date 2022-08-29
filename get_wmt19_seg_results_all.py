@@ -7,7 +7,6 @@ import torch
 import argparse
 from transformers import AutoTokenizer
 from collections import defaultdict
-from bart_score import BARTScorer
 import bert_score
 
 import argparse
@@ -259,7 +258,7 @@ def main():
     parser.add_argument("-a", "--attack", default="no_attack")
     parser.add_argument(
         "--lang_pairs",
-        default="en-cs",
+        default="fi-en",
         help="language pairs used for tuning",
     )
     args = parser.parse_args()
@@ -274,9 +273,7 @@ def main():
     print(args.model, args.attack, args.evaluation)
     if args.evaluation == 'bert-score':
         scorer = bert_score.scorer.BERTScorer(model_type=args.model, all_layers=True)
-    if args.evaluation == 'bart-score':
-        src, tgt = args.lang_pairs.split('-')
-        scorer = BARTScorer(device='cuda:0', checkpoint=args.model, src_lang=src, tgt_lang=tgt)
+
     results = defaultdict(dict)
     chunk_0 = defaultdict(dict)
     chunk_1 = defaultdict(dict)
