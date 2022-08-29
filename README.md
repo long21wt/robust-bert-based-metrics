@@ -5,7 +5,7 @@
 Compute score on WMT19
 
 ```python
-python get_wmt19_seg_results.py --model bert-base-large --attack visual_0.3 --num_layers 9 --lang_pairs fi-en
+python get_wmt19_seg_results.py --model bert-base-uncased --attack visual_0.3 --num_layers 9 --lang_pairs fi-en
 ```
 where 
 
