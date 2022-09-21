@@ -1,5 +1,17 @@
 # Layer or Representation Space: What makes BERT-based Metrics Robust?
 
+## Citation
+```tex
+@InProceedings{Vu.2022.COLING,
+    title = {Layer or Representation Space: What makes BERT-based Evaluation Metrics Robust?},
+    author = {Vu, Doan Nam Long Vu and Moosavi, Nafise Sadat and Eger, Steffen},
+    publisher = {International Committee on Computational Linguistics},
+    booktitle = {Proceedings of the 29th International Conference on Computational Linguistics},
+    pages = {(to appear)},
+    year = {2022},
+    address = {Gyeongju, Republic of Korea}
+}
+```
 ## Evaluation on different ratios of unknown tokens.
 
 Compute score on WMT19
@@ -43,7 +55,7 @@ Similar to previous experiment, default byt5 setting for `num_layers` in BERTSco
 
 - `"google/byt5-base": 17`
 
-- `"gooel/byt5-large": 30`
+- `"google/byt5-large": 30`
 
 
 ## Impact of the Selected Hidden Layer
