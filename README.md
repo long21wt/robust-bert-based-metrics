@@ -63,7 +63,7 @@ Similar to previous experiment, default byt5 setting for `num_layers` in BERTSco
 **Note**: mean of aggregation setting is extremly resource consuming on WMT19 dataset.
 
 ```
-python get_wmt19_seg_results.py --model bert-base-base --attack visual_0.3 --lang_pairs fi-en
+python get_wmt19_seg_results_all.py --model bert-base-base --attack visual_0.3 --lang_pairs fi-en
 ```
 
 ## Acknowledgement
