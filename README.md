@@ -1,7 +1,7 @@
 # Layer or Representation Space: What makes BERT-based Metrics Robust?
 
 ## Citation
-```tex
+```bib
 @InProceedings{Vu.2022.COLING,
     title = {Layer or Representation Space: What makes BERT-based Evaluation Metrics Robust?},
     author = {Vu, Doan Nam Long Vu and Moosavi, Nafise Sadat and Eger, Steffen},
@@ -45,7 +45,7 @@ python wmt21-flores.py
 ```
 ## Impact of Character-level Embeddings
 
-```
+```python
 python get_wmt19_seg_results.py --model google/byt5-small --attack visual_0.3 --num_layers 1
 ```
 
@@ -62,7 +62,7 @@ Similar to previous experiment, default byt5 setting for `num_layers` in BERTSco
 
 **Note**: mean of aggregation setting is extremly resource consuming on WMT19 dataset.
 
-```
+```python
 python get_wmt19_seg_results_all.py --model bert-base-base --attack visual_0.3 --lang_pairs fi-en
 ```
 
