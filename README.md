@@ -4,7 +4,7 @@
 ```bib
 @InProceedings{Vu.2022.COLING,
     title = {Layer or Representation Space: What makes BERT-based Evaluation Metrics Robust?},
-    author = {Vu, Doan Nam Long Vu and Moosavi, Nafise Sadat and Eger, Steffen},
+    author = {Vu, Doan Nam Long and Moosavi, Nafise Sadat and Eger, Steffen},
     publisher = {International Committee on Computational Linguistics},
     booktitle = {Proceedings of the 29th International Conference on Computational Linguistics},
     pages = {(to appear)},
