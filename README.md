@@ -2,14 +2,19 @@
 
 ## Citation
 ```bib
-@InProceedings{Vu.2022.COLING,
-    title = {Layer or Representation Space: What makes BERT-based Evaluation Metrics Robust?},
-    author = {Vu, Doan Nam Long and Moosavi, Nafise Sadat and Eger, Steffen},
-    publisher = {International Committee on Computational Linguistics},
-    booktitle = {Proceedings of the 29th International Conference on Computational Linguistics},
-    pages = {(to appear)},
-    year = {2022},
-    address = {Gyeongju, Republic of Korea}
+@inproceedings{vu-etal-2022-layer,
+    title = "Layer or Representation Space: What Makes {BERT}-based Evaluation Metrics Robust?",
+    author = "Vu, Doan Nam Long  and
+      Moosavi, Nafise Sadat  and
+      Eger, Steffen",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.300",
+    pages = "3401--3411",
+    abstract = "The evaluation of recent embedding-based evaluation metrics for text generation is primarily based on measuring their correlation with human evaluations on standard benchmarks. However, these benchmarks are mostly from similar domains to those used for pretraining word embeddings. This raises concerns about the (lack of) generalization of embedding-based metrics to new and noisy domains that contain a different vocabulary than the pretraining data. In this paper, we examine the robustness of BERTScore, one of the most popular embedding-based metrics for text generation. We show that (a) an embedding-based metric that has the highest correlation with human evaluations on a standard benchmark can have the lowest correlation if the amount of input noise or unknown tokens increases, (b) taking embeddings from the first layer of pretrained models improves the robustness of all metrics, and (c) the highest robustness is achieved when using character-level embeddings, instead of token-based embeddings, from the first layer of the pretrained model.",
 }
 ```
 ## Evaluation on different ratios of unknown tokens.
